@@ -1,0 +1,14 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+<header>
+    <nav>
+        <h2><span><a href='/'>{SITE_TITLE}</a></span></h2>
+
+        <ul>
+            <HeaderLink href='/'>Portfolio</HeaderLink>
+            <!-- <HeaderLink href='/'></HeaderLink> TO DO: CHANGE-THEME -->
+        </ul>
+    </nav>
+</header>
