@@ -348,22 +348,22 @@ import { SITE_TITLE, SITE_DESCRIPTION, stack, projects } from '../consts.ts'
 			</article>
 		</section>
 
-		<section class="proyects">
-			<h2 class="subtitle">Proyects</h2>
+		<section class="projects">
+			<h2 class="subtitle">Projects</h2>
 			<div class="major-container">
-				<div class="proyects__container">
+				<div class="projects__container">
 					{
 						projects.slice(2,4).map(project => (
-							<article class="proyect">
+							<article class="project">
 								<a href={project.url} target="_blank">
 								
-									<div class="proyect__info">
-										<h3 class="proyect__title">
+									<div class="project__info">
+										<h3 class="project__title">
 											{project.name}
 										</h3>
-										<p class="proyect__description" set:html={project.description}></p>
+										<p class="project__description" set:html={project.description}></p>
 									</div>
-									<figure class="proyect__image">
+									<figure class="project__image">
 										
 									</figure>
 								</a>
@@ -372,19 +372,19 @@ import { SITE_TITLE, SITE_DESCRIPTION, stack, projects } from '../consts.ts'
 						))
 					}
 				</div>
-				<div class="proyects__container">
+				<div class="projects__container">
 					{
 						projects.slice(0,2).map(project => (
-							<article class="proyect">
+							<article class="project">
 								<a href={project.url} target="_blank">
 								
-									<div class="proyect__info">
-										<h3 class="proyect__title">
+									<div class="project__info">
+										<h3 class="project__title">
 											{project.name}
 										</h3>
-										<p class="proyect__description" set:html={project.description}></p>
+										<p class="project__description" set:html={project.description}></p>
 									</div>
-									<figure class="proyect__image">
+									<figure class="project__image">
 										
 									</figure>
 								</a>
