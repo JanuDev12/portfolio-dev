@@ -12,25 +12,302 @@ import { SITE_TITLE, SITE_DESCRIPTION, stack, projects } from '../consts.ts'
 <html lang="en">
 <head>
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+
+	<style>
+		body {
+			overflow-x: hidden;
+			max-width: 100%;
+		}
+		.portfolio {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.portfolio b{
+			color: #FAA628;
+		}
+		.portfolio h2{
+			color: var(--secondary);
+		}
+		.home {
+			position: relative;
+			height: 25em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.title {
+			text-align: center;
+			text-wrap: pretty;
+		}
+		.title h1 {
+			color: var(--secondary);
+			font-size: 3.5rem;
+		}
+		.title h1 {
+			color: var(--secondary);
+			font-size: 3.5rem;
+		}
+		.title h2 {
+			font-size: 2.5rem;
+			color: var(--secondary);
+			background: linear-gradient(270deg, #f76927 0%, #fdfa29 100%);
+			background-size: 150%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
+			animation: horizontal 4s linear infinite;
+		}
+		.title p {
+			padding-inline: 2.5em;
+			margin-top: 1em;
+			font-size: 1em;
+		}
+		.subtitle {
+			margin-bottom: 1em;
+			font-size: 2.4rem;
+		}
+		.about {
+			margin-bottom: 1em;
+			display: flex;
+			align-items: center;
+			gap: 5em;
+		}
+		.avatar{
+			animation: floating ease-in-out 4s infinite;
+			z-index: 2;
+		}
+		.caption{
+			text-wrap: balance;
+		}
+		.about__description p{
+			padding: 2em;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 1em;
+			background: rgba(255, 255, 255, 0.05);
+			font-size: 1.1rem;
+		}
+		.stacks, .experiences, .projects {
+			width: 100%;
+			margin-bottom: 5em;
+			text-align: center;
+		}
+		.exp_subtitle {
+			font-size: 2.4rem;
+		}
+		.experiences_title {
+			display: flex;
+			flex-direction: column;
+			gap: 0.2em;
+			margin-bottom: 1em;
+		}
+		.experience {
+			position: relative;
+			height: fit-content;
+			padding: 2em;
+			border-radius: 1em;
+			margin: 0 auto;
+			display: block;
+			background: rgba(255, 255, 255, 0.05);
+			text-align: start;
+			border: 1px solid rgba(255,255,255, 0.2);
+		}
+		.experience a {
+			text-decoration: none;
+			color: var(--secondary);
+		}
+		.experience:hover {
+			border-color: #f76927aa;
+		}
+		.experience:hover:before {
+			--length: 50px;
+			--weight: 2px;
+			--radius: 5em;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -1px;
+			width: var(--weight);
+			height: var(--length);
+			border-radius: var(--radius);
+			background: linear-gradient(rgba(255,255255,0), #f76927);
+			background-size: 50%;
+			animation: bord 5s linear infinite;
+			box-shadow: 0px 0px 50px 10px #f7692733;
+			}
+		.experience__title h3 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: var(--secondary);
+			transition: 0s;
+		}
+		.experience:hover .experience__title h3 {
+			color: #f76927;
+		}
+		.experience__title h3 svg {
+			margin-left: 10px;
+		}
+		.experience__title span {
+			font-weight: 500;
+		}
+		.experience h3 {
+			font-size: 0px;
+		}
+		.experience__role {
+			font-weight: 500;
+		}
+		.experience__date {
+			font-size: 1rem;
+			color: var(--secondary);
+		}
+		.experience__tasks {
+			padding-block-start: 1em;
+			padding-inline-start: 2em;
+			font-size: 1.1rem;
+		}
+		.experience__stack {
+			margin-top: 1.4em;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			gap: 1em;
+			list-style: none;
+		}
+		.stacks ul {
+			padding: 0.8em 1em;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 1.5em;
+			list-style: none;
+		}
+		.stack {
+			position: relative;
+			width: 3.3em;
+			height: 3.3em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			user-select: none;
+		}
+		.stack:hover::before,
+		.stack:focus-visible::before,
+		.stack:active::before {
+			border-color: var(--background-dif);
+			backdrop-filter: blur(14px);
+		}
+		.stack:hover::after,
+		.stack:focus-visible::after,
+		.stack:active::after {
+			box-shadow: 0 0 35px 20px va(--background-dif);
+		}
+		.stack::after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			box-shadow: 0 0 35px 12px va(--background-dif);
+			z-index: -2;
+		}
+		.stack::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border: 1px solid transparent;
+			border-radius: 1em;
+			backdrop-filter: blur(30px);
+			z-index: -1;
+		}
+
+		.projects {
+			position: relative;
+		}
+		.major-container {
+			display: flex;
+			gap: 1.5em;
+		}
+		.projects__container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1.5em;
+		}
+		.project {
+			position: relative;
+			width: 100%;
+			/* max-width: 360px; */
+			height: fit-content;
+			padding: 1em 2em;
+			border: 1px solid rgba(255,255,255, 0.2);
+			border-radius: 1em;
+			background: rgba(255,255,255, 0.05);
+		}
+		.project a{
+			text-decoration: none;
+		}
+		.project:hover::before {
+			--length: 50px;
+			--weight: 2px;
+			--radius: 5em;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -1px;
+			width: var(--weight);
+			height: var(--length);
+			border-radius: var(--radius);
+			background: linear-gradient(rgba(255,255255,0), #f76927);
+			background-size: 50%;
+			animation: bord 5s linear infinite;
+			box-shadow: 0px 0px 50px 10px #f7692733;
+		}
+		.project__title {
+			margin-bottom: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 14px;
+			color: #FAA628;
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
+		.project__description {
+			font-size: 1.1rem;
+			color: white;
+			margin-bottom: 1em;
+		}
+		.project__image img {
+			max-width: 70%;
+			height: auto;
+		}
+	</style>
 </head>
 <body>
 	<Header />
-	<main>
-		<section>
-			<article>
+	<main class="portfolio">
+		<section class="home">
+			<article class="title">
 				<h1>Juan M. Mercedes</h1>
 				<h2>Front-end Developer & Backend Developer</h2>
 
-				<p>
+				<p class="caption">
 					Always learning about new paradigms and technologies to apply right solution in the right place.
 				</p>
 			</article>
 		</section>
 
-		<section>
+		<section class="about">
 			<!-- TO DO: find image to add here -->
-			<div>
-				<ul>
+			<div class="about__description">
+				<ul class="social-links">
 					<li class="social-links">
 						<a target="_blank" href="/"></a>
 						<!-- TO DO: Add icons and social links (LinkedIn, Github, etc..) -->
