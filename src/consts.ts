@@ -67,31 +67,27 @@ export const stack = [
 ];
 export const projects = [
   {
-    name: "Web design Illustrator",
+    name: "Project #1",
     description:
-      'A light, simple and easy to use third party <b style="color: #FAA628;">Hono</b> middleware for <b style="color: #FAA628;">OAuth 2.0</b> authentication with providers like Facebook, Github, Google, X, etc. Part of the <b style="color: #FAA628;">official</b> Hono middlewares.',
-   //  image: honoLogo,
+      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur maiores reprehenderit non maxime nobis. Amet <b style="color: #36bde7;">consectetur</b> possimus ad recusandae dolor sint commodi repellat?',
     url: "/",
   },
   {
-    name: "Gallery",
+    name: "Project #2",
     description:
-      'AI generative web app that converts <b style="color: #FAA628;">Images to code</b>, offering a freemium subscription that provides 8 free credits per month to every user. The code generation is made by ChatGPT using the OpenAI API.',
-    // image: berlinLogo,
-     url: "/",
+      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur maiores reprehenderit non maxime nobis. Amet <b style="color: #36bde7;">consectetur</b>.',
+    url: "/",
   },
   {
-    name: "Hollow Knight Landing page",
+    name: "Project #3",
     description:
-      'A <b style="color: #FAA628;">Web App</b> to craft stunning color palettes, simulate color blindness for accessibility, create eye-catching gradients and animations, and save your favorites for easy access. Plus, add a personal touch with font icon creation.',
-    // image: paletaLogo, IMAGEN
-     url: "/",
+      'ALorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur. Amet <b style="color: #36bde7;">consectetur</b>',
+    url: "/",
   },
   {
-    name: "Clone Spotify",
+    name: "Project #4",
     description:
-      '<b style="color: #FAA628;">Npm package</b> for color manipulation in formats like CMYK, RGB, etc. With it, you can convert a color between formats, simulate color blindness, generate all sorts of palettes, image color extraction, and more.',
-    // image: colorsKitLogo,
-     url: "/",
+      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Amet <b style="color: #36bde7;">consectetur</b> possimus ad recusandae dolor sint commodi repellat?',
+    url: "/",
   },
 ];

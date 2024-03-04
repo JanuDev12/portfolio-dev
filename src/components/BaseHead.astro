@@ -3,9 +3,9 @@ import '../styles/global.css'
 interface Props {
     title: string;
     description: string;
-    // image: string;
+    image: string;
 }
-const { title , description } = Astro.props;
+const { title , description} = Astro.props;
 
 
 
@@ -17,9 +17,12 @@ const { title , description } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- FAVICON: link rel="icon" href="" -->
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
+<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
 
 <!-- Canonical URL -->
 
