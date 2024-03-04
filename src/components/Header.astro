@@ -46,6 +46,7 @@ import { SITE_TITLE } from '../consts';
         display: block;
         width: 24px;
         height: 24px;
+        background-image: url('/favicon.png');
         /* background-image: ; */
         background-position: center;
         background-repeat: no-repeat;
@@ -60,22 +61,37 @@ import { SITE_TITLE } from '../consts';
     }
     .logo a {
         text-decoration: none;
-        color: var(--secondary);
+        color: var(--text-white);
     }
     .header__nav ul a {
         position: relative;
         padding: 0.4em 1em;
-        color: var(--secondary);
+        color: var(--text-white);
         text-align: center;
         text-decoration: none;
     }
 
     .header__nav ul [aria-current='page']{
-        color: #FAA628;
+        color: var(--primary);
         font-weight: 500;
         text-decoration: underline;
         text-decoration-thickness: 2px;
     }
 
     /* TO DO: responsive */
+    @media (min-width: 720px) {
+		header {
+			padding-inline: 2em;
+		}
+		.header__nav ul {
+			gap: 30px;
+		}
+		.logo {
+			font-size: 1.2em;
+		}
+		.icon-logo {
+			width: 30px;
+			height: 30px;
+		}
+	}
 </style>

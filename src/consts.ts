@@ -67,28 +67,28 @@ export const stack = [
 ];
 export const projects = [
   {
-    name: "Web design Illustrator",
+    name: "Project #1",
     description:
       '',
    //  image: honoLogo,
     url: "/",
   },
   {
-    name: "Gallery",
+    name: "Project #2",
     description:
       '',
     // image: berlinLogo,
      url: "/",
   },
   {
-    name: "Hollow Knight Landing page",
+    name: "Project #3",
     description:
       '',
     // image: paletaLogo, IMAGEN
      url: "/",
   },
   {
-    name: "Clone Spotify",
+    name: "Project #4",
     description:
       '',
     // image: colorsKitLogo,
