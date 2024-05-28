@@ -67,27 +67,21 @@ export const stack = [
 ];
 export const projects = [
   {
-    name: "Project #1",
+    name: "Compuland",
     description:
-      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur maiores reprehenderit non maxime nobis. Amet <b style="color: #36bde7;">consectetur</b> possimus ad recusandae dolor sint commodi repellat?',
-    url: "/",
+      "A computer sales website with the goal of having experience with HTML, CSS and best practices in UI/UX. I did it in my free time.",
+    url: "https://janudev12.github.io/Compuland/",
   },
   {
-    name: "Project #2",
+    name: "Landing Page with Dark Mode",
     description:
-      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur maiores reprehenderit non maxime nobis. Amet <b style="color: #36bde7;">consectetur</b>.',
-    url: "/",
+      "Website created to experiment with Javascript with a functionality that I found interesting.",
+    url: "https://janudev12.github.io/Landing-Page-with-dark-mode/",
   },
   {
-    name: "Project #3",
+    name: "Projects NOT DONE",
     description:
-      'ALorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Officia dolorem mollitia sit, nesciunt, nam esse corrupti aspernatur. Amet <b style="color: #36bde7;">consectetur</b>',
-    url: "/",
-  },
-  {
-    name: "Project #4",
-    description:
-      'Lorem ipsum dolor sit amet <b style="color: #36bde7;">consectetur</b> adipisicing elit. Amet <b style="color: #36bde7;">consectetur</b> possimus ad recusandae dolor sint commodi repellat?',
-    url: "/",
+      "These projects are in progress or I have not had time to finish them. Feel free to ignore them. The reason I put them up is to show that I am still learning and working. These projects are not deployed either, but if you are interested in contacting me, I can give more details about them.",
+    url: "https://github.com/JanuDev12?tab=repositories",
   },
 ];
