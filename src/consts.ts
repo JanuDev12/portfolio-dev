@@ -67,31 +67,21 @@ export const stack = [
 ];
 export const projects = [
   {
-    name: "Project #1",
+    name: "Compuland",
     description:
-      '',
-   //  image: honoLogo,
-    url: "/",
+      "A computer sales website with the goal of having experience with HTML, CSS and best practices in UI/UX. I did it in my free time.",
+    url: "https://janudev12.github.io/Compuland/",
   },
   {
-    name: "Project #2",
+    name: "Landing Page with Dark Mode",
     description:
-      '',
-    // image: berlinLogo,
-     url: "/",
+      "Website created to experiment with Javascript with a functionality that I found interesting.",
+    url: "https://janudev12.github.io/Landing-Page-with-dark-mode/",
   },
   {
-    name: "Project #3",
+    name: "Projects NOT DONE",
     description:
-      '',
-    // image: paletaLogo, IMAGEN
-     url: "/",
-  },
-  {
-    name: "Project #4",
-    description:
-      '',
-    // image: colorsKitLogo,
-     url: "/",
+      "These projects are in progress or I have not had time to finish them. Feel free to ignore them. The reason I put them up is to show that I am still learning and working. These projects are not deployed either, but if you are interested in contacting me, I can give more details about them.",
+    url: "https://github.com/JanuDev12?tab=repositories",
   },
 ];
